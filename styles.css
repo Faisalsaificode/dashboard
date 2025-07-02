@@ -203,14 +203,62 @@ table tbody tr:hover{
 }
 
 #schedule{
-  display: flex;
-  flex-direction: column;
-  width: 85%;
-  border-radius: 25px;
   background-color: white;
+  border-radius: 30px;
+  height: 450px;
+  margin-top: 80px;
+  overflow-y: scroll;
+  max-height: 400px;
   margin-left: 70px;
-  padding: 10px;
-  font-weight: bolder;
 }
-git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
+
+.schedule-head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.schedule-head > h3{
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 25px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.schedule-head p {
+  margin-right: 20px;
+  font-weight: bolder;
+  font-size: 15px;
+  margin-top: 0;
+}
+
+
+.meets{
+  margin-top: 0;
+  margin-bottom: 1px;
+  margin-left: 10px;
+}
+
+.head{
+  font-size: 20px;
+  font-weight: 600;
+
+}
+.detail{
+  font-size: 16px;
+  font-weight: 400;
+  color: #999999;
+}
+.schedule-detail div:nth-child(odd){
+  margin-left: 20px;
+  margin: 10px;
+  border-left: 3px solid #9bdd7c;
+}
+
+.schedule-detail div:nth-child(even){
+  margin-left: 20px;
+  margin: 10px;
+  border-left: 3px solid lightblue;
+}
+
